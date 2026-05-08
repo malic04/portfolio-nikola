@@ -1,6 +1,6 @@
 server {
     listen 80;
-    server_name nmailc.xyz www.nmailc.xyz;
+    server_name nmalic.xyz www.nmalic.xyz;
 
     # Let's Encrypt webroot challenge
     location /.well-known/acme-challenge/ {
@@ -15,10 +15,10 @@ server {
 
 server {
     listen 443 ssl;
-    server_name nmailc.xyz www.nmailc.xyz;
+    server_name nmalic.xyz www.nmalic.xyz;
 
-    ssl_certificate /etc/letsencrypt/live/nmailc.xyz/fullchain.pem;
-    ssl_certificate_key /etc/letsencrypt/live/nmailc.xyz/privkey.pem;
+    ssl_certificate /etc/letsencrypt/live/nmalic.xyz/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/nmalic.xyz/privkey.pem;
 
     include /etc/letsencrypt/options-ssl-nginx.conf;
     ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem;

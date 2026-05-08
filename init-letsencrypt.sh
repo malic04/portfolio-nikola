@@ -1,11 +1,11 @@
 #!/bin/bash
-# Bootstrap Let's Encrypt certificates for nmailc.xyz
+# Bootstrap Let's Encrypt certificates for nmalic.xyz
 # Run this ONCE on first deploy before starting the full stack.
 
 set -e
 
-DOMAIN="nmailc.xyz"
-EMAIL="admin@nmailc.xyz"   # <-- change to your real email
+DOMAIN="nmalic.xyz"
+EMAIL="admin@nmalic.xyz"   # <-- change to your real email
 STAGING=0                   # Set to 1 for testing to avoid rate limits
 
 RSA_KEY_SIZE=4096
