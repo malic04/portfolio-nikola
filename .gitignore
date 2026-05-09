@@ -7,18 +7,47 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
+# dependencies
+node_modules/
+
+# build output (Vite / Vue)
+dist/
+dist-ssr/
+
+# env files
+.env
+.env.local
+.env.*.local
 *.local
 
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
-.idea
+.idea/
 .DS_Store
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+
+# =========================
+# 🚀 SERVER / DEPLOY STUFF (IMPORTANT)
+# =========================
+
+# Certbot / Let's Encrypt (NEVER commit certs)
+certbot/
+letsencrypt/
+*.pem
+*.key
+
+# Nginx config (server-specific)
+nginx/conf.d/*.conf
+nginx/conf.d/default.conf
+
+# Docker runtime overrides
+docker-compose.override.yml
+
+# optional backups / temp files
+*.bak
+*.tmp
