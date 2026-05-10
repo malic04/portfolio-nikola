@@ -54,11 +54,11 @@ const historyIdx = ref(-1)
 
 // ─── Boot sequence ────────────────────────────────────────────────────────────
 const bootLines = [
-  { type: 'output-green', text: '╔══════════════════════════════════════════╗' },
-  { type: 'output-green', text: '║       NIKOLA MALIC  —  PORTFOLIO v1.0    ║' },
-  { type: 'output-green', text: '╚══════════════════════════════════════════╝' },
+  { type: 'output-green', text: '╔══════════════════════════════════╗' },
+  { type: 'output-green', text: '║    NIKOLA MALIC  —  PORTFOLIO    ║' },
+  { type: 'output-green', text: '╚══════════════════════════════════╝' },
   { type: 'blank' },
-  { type: 'output-muted', text: 'Software Developer  ·  Backend · Algorithms · Systems' },
+  { type: 'output-muted', text: 'Software Developer  ·  Frontend · Backend' },
   { type: 'blank' },
   { type: 'output', text: 'Type "help" to see available commands.' },
   { type: 'blank' },
@@ -288,7 +288,7 @@ onMounted(() => {
 
 <style scoped>
 .hero-section {
-  min-height: calc(100vh - 64px);
+  min-height: calc(100svh - 64px);
   display: flex;
   align-items: center;
   background: #0d1117;
@@ -297,7 +297,7 @@ onMounted(() => {
 }
 
 .term-scroll {
-  max-height: 480px;
+  max-height: min(480px, 55svh);
   overflow-y: auto;
   font-family: 'JetBrains Mono', monospace;
   font-size: 0.875rem;
@@ -358,5 +358,28 @@ onMounted(() => {
   font-size: 1.35rem;
   font-weight: 700;
   color: #00ff41;
+}
+
+/* Mobile tweaks: reduce padding and limit terminal height to avoid overflow on small phones */
+@media (max-width: 480px) {
+  .hero-section {
+    padding: 24px 12px;
+    min-height: calc(100svh - 56px);
+    align-items: flex-start;
+  }
+
+  .term-scroll {
+    /* use small-viewport units to avoid mobile browser chrome issues */
+    max-height: 55svh;
+    font-size: 0.825rem;
+  }
+
+  .input-line {
+    gap: 6px;
+  }
+
+  .hidden-input {
+    font-size: 0.95rem;
+  }
 }
 </style>
