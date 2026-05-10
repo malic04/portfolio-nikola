@@ -5,7 +5,7 @@
 set -e
 
 DOMAIN="nmalic.xyz"
-EMAIL="admin@nmalic.xyz"   # <-- change to your real email
+EMAIL="malic.nikola2@gmail.com"   # <-- change to your real email
 STAGING=0                   # Set to 1 for testing to avoid rate limits
 
 RSA_KEY_SIZE=4096
