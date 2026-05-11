@@ -1,5 +1,23 @@
-# Vue 3 + Vite
+# Nikola's Portfolio
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+A personal portfolio site built with Vue 3 and Vite showcasing projects and skills.
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+## Overview
+
+- **Tech stack:** Vue 3 (SFC + `<script setup>`), Vite, plain CSS
+- **Purpose:** Serve as a lightweight, easy-to-edit portfolio and project showcase
+
+## Features
+
+- Responsive single-page layout with sections for Hero, About, Skills, Projects, and Contact
+- Projects and skills driven from simple JS data files for easy editing
+- Ready for local development, production build, and containerized deployment
+
+## Project Structure 
+
+- `src/` — Vue app source
+	- `components/` — UI components (HeroSection, ProjectsSection, etc.)
+	- `data/projects.js` — Project entries shown in Projects section
+	- `data/skills.js` — Skills shown in Skills section
+	- `main.js`, `App.vue`, `style.css`
+- `public/` — static assets
