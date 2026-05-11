@@ -165,7 +165,7 @@ function processCommand(raw) {
         blank(),
         out('Name   : Nikola Malic'),
         out('Role   : Software Developer'),
-        out('Focus  : Backend · Algorithms · Systems Programming'),
+        out('Focus  : Frontend · Backend '),
         out('GitHub : github.com/malic04'),
         blank(),
         mut("I enjoy building things from scratch — whether it's a secure"),

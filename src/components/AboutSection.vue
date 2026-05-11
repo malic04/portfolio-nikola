@@ -17,7 +17,7 @@
           </div>
           <div class="row">
             <span class="key">Focus</span><span class="sep">:</span>
-            <span class="c-white">Backend &bull; Algorithms &bull; Systems Programming</span>
+            <span class="c-white">Frontend &bull; Backend &bull; Systems Programming</span>
           </div>
           <div class="row">
             <span class="key">GitHub</span><span class="sep">:</span>
@@ -28,9 +28,9 @@
         </div>
         <div class="divider"></div>
         <p class="bio">
-          I enjoy building things from scratch — whether it's a secure authentication API,
-          a graph search algorithm, or OS-level concurrent programs. Always looking for
-          new challenges and interesting problems to solve.
+          I enjoy building full-stack applications and AI-powered chatbots using LLMs, vector databases,
+          and modern backend technologies. From responsive frontends to scalable APIs and intelligent AI systems, 
+          I’m always looking for new challenges and interesting problems to solve.
         </p>
       </TerminalWindow>
     </v-container>

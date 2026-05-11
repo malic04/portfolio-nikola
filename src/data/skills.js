@@ -1,7 +1,7 @@
 export const skillGroups = [
   {
     category: 'Languages',
-    skills: ['C', 'Python', 'JavaScript', 'Kotlin', 'SQL'],
+    skills: ['C', 'Java', 'Python', 'JavaScript', 'SQL'],
   },
   {
     category: 'Backend',
